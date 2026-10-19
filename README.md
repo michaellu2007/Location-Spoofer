@@ -25,6 +25,22 @@
 
 ---
 
+## 📦 下载
+
+> **2.6.13 修复版（非官方 Pre-release）**
+>
+> 基于 2.6.13 代码线构建，修复路线模拟开启“智能自适应步频”后微信运动步数暴涨到 10 万的问题，并支持应用在前台保持亮屏。
+>
+> - [arm64-v8a APK](https://github.com/michaellu2007/Location-Spoofer/releases/download/v2.6.13-fix/LocationSpoofer_v2.6.13-fixed-arm64-v8a.apk)（绝大多数手机）
+> - [armeabi-v7a APK](https://github.com/michaellu2007/Location-Spoofer/releases/download/v2.6.13-fix/LocationSpoofer_v2.6.13-fixed-armeabi-v7a.apk)（32 位旧机型）
+> - [Release 说明与 SHA-256](https://github.com/michaellu2007/Location-Spoofer/releases/tag/v2.6.13-fix)
+>
+> ⚠️ 该 APK 使用新的本地签名，安装前必须卸载旧版 2.6.13（应用数据会清空）；安装后需在 LSPosed 中重新勾选作用域，并强制停止微信。
+
+> 注：本 README 其余内容对应主线 3.0.1；2.6.13 修复版仅在该代码线上构建。
+
+---
+
 ## 项目简介
 
 在现代 Android 系统的风控与反作弊环境中，传统的“模拟位置（Mock Location）”开发者选项已被商业 SDK（如高德风控、腾讯安全、百度定位、网易易盾、各类考勤及打卡风控系统）列为高风险特征。这类检测机制不仅验证 `isFromMockProvider` / `isMock` 标志位，还会主动采集并交叉比对设备所处的周围物理环境：

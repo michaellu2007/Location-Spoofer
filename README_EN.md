@@ -24,6 +24,22 @@
 
 ---
 
+## 📦 Download
+
+> **2.6.13 fixed build (unofficial pre-release)**
+>
+> Built from the 2.6.13 code line. Fixes the WeChat Sports step count jumping to 100,000 when route simulation uses smart adaptive cadence, and keeps the screen on while the app is in the foreground.
+>
+> - [arm64-v8a APK](https://github.com/michaellu2007/Location-Spoofer/releases/download/v2.6.13-fix/LocationSpoofer_v2.6.13-fixed-arm64-v8a.apk) (most phones)
+> - [armeabi-v7a APK](https://github.com/michaellu2007/Location-Spoofer/releases/download/v2.6.13-fix/LocationSpoofer_v2.6.13-fixed-armeabi-v7a.apk) (older 32-bit devices)
+> - [Release notes and SHA-256](https://github.com/michaellu2007/Location-Spoofer/releases/tag/v2.6.13-fix)
+>
+> ⚠️ This APK uses a new local signing key. Uninstall the old 2.6.13 first (app data will be cleared), then re-enable the module scope in LSPosed and force-stop WeChat.
+
+> Note: the rest of this README describes the 3.0.1 mainline; the fixed build above is built from the 2.6.13 code line.
+
+---
+
 ## Introduction
 
 In modern Android risk control and anti-cheating environments, standard developer options ("Mock Location") have long been classified as a critical risk factor by commercial positioning and fraud detection SDKs (such as AMap Security, Tencent Positioning, Baidu Maps SDK, NetEase EasyShield, and enterprise attendance verification systems). These detection frameworks do not merely check the `isFromMockProvider` / `isMock` API flags; they actively collect and cross-verify ambient physical signals:
